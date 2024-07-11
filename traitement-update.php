@@ -10,4 +10,6 @@ $requete = "UPDATE articles SET titre ='$titre', image='$image' WHERE id = $id";
 
 $bdd->exec($requete);
 
+header("location: index.php")
+
 ?>

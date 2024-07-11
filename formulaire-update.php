@@ -5,8 +5,9 @@ require_once 'bdd.php';
 $id = $_GET["id"];
 
 $requete="SELECT * FROM articles WHERE id=$id";
-$infos=$bdd->query($requete);
-$resultat=$infos->fetch(PDO::FETCH_ASSOC);
+$info=$bdd->query($requete);
+$resultat=$info->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 

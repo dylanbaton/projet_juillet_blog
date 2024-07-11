@@ -4,7 +4,7 @@
     <input type="text" name="titre">
 
     Image
-    <input type="text" name="image">
+    <input type="file" name="image">
 
     <input type="submit" value="envoyer">
 
