@@ -18,7 +18,7 @@ $articles = $resultat->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="page admin d'articles">
-    <link rel="stylesheet" href="css/liste.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Administrations des articles</title>
 </head>
 <body>

@@ -21,6 +21,7 @@ $article = $resultat->fetch(PDO::FETCH_ASSOC); // quand tu recupere un article
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="page de modification">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/liste.css">
     <title>Page de modification de l'aticle : <?php echo $article["titre"];?> </title>
 </head>
 <body>
@@ -34,23 +35,27 @@ $article = $resultat->fetch(PDO::FETCH_ASSOC); // quand tu recupere un article
     </nav>
 
 <h1>Page de modification de l'article : <?php echo $article["titre"];?> </h1>
+<div class="container">
+    <form action="traitement-update.php" method="GET">
 
-<form action="traitement-update.php" method="GET">
+        Titre
+        <input type="text" name="titre" value="<?php echo $article["titre"];?>">
 
-    Titre
-    <input type="text" name="titre" value="<?php echo $article["titre"];?>">
+        Image
+        <input type="text" name="image" value="<?php echo $article["image"];?>">
 
-    Image
-    <input type="text" name="image" value="<?php echo $article["image"];?>">
+        Description
+        <input type="text" name="description" value="<?php echo $article["description"];?>">
 
-    Description
-    <input type="text" name="description" value="<?php echo $article["description"];?>">
-    
-    <input type="hidden" name="id" value="<?php echo $id;?>">
+        image d'article
+        <input type="text" name="image_article" value="<?php echo $article["image_article"];?>">
+        
+        <input type="hidden" name="id" value="<?php echo $id;?>">
 
-    <input type="submit" value="envoyer">
+        <input type="submit" value="envoyer">
 
 
-</form>
+    </form>
+</div>
 </body>
 </html>
