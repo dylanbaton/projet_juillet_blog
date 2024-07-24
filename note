@@ -1,0 +1,20 @@
+// je recupere un article
+
+$requete = "SELECT * FROM articles WHERE id=$id";
+$resultat = $bdd->query($requete);
+$article = $resultat->fetch(PDO::FETCH_ASSOC); // quand tu recupere un article
+
+echo '<pre>';
+print_r($article);
+echo '<pre>';
+
+
+// je recupere plusierus articles
+
+$requete = "SELECT * FROM articles";
+$resultat = $bdd->query($requete);
+$articles = $resultat->fetchAll(PDO::FETCH_ASSOC); // quand tu recupere plusieurs articles
+
+echo '<pre>';
+print_r($articles);
+echo '<pre>';

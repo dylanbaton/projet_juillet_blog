@@ -1,0 +1,72 @@
+body{
+    background-color: brown;
+    margin: 0 auto;
+}
+
+img {
+    width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Style pour la barre de navigation */
+.navbar {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Contenu centré horizontalement */
+    padding-bottom: 100px;
+}
+
+/* Style pour la liste dans la navigation */
+.liste {
+    display: flex;
+    justify-content: center;
+    font-size: 30px; /* Taille de la police */
+    position: fixed; /* Positionnement fixe */
+    background-color: black;
+    width: 100%;
+    height: 8%;
+    gap: 15px;
+}
+
+/* Style pour les liens dans la liste */
+.liste a {
+    display: flex;
+    font-family: Gideon Roman; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: white; /* Couleur du texte en noir */
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 580px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+h1 {
+    margin: 10px;
+}

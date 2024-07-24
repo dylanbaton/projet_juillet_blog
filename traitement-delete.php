@@ -8,6 +8,5 @@ $query = "DELETE FROM articles WHERE id = $id";
 
 $execution=$bdd->exec($query);
 
-header("location: index.php");
-
+header("location: admin-articles.php");
 ?>
